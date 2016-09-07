@@ -337,7 +337,7 @@
             // get the difference between the two entries and update the first
             var timeDifference = second.TimeRecorded - first.TimeRecorded;
             timeDifference = ApplyCeiling(timeDifference);
-            first.MinutesSpent = (int) timeDifference.TotalMinutes;
+            first.MinutesSpent += (int) timeDifference.TotalMinutes;
             return first;
         }
     }
